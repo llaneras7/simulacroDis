@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <meta charset="utf-8">
+	 <title>Botones</title>
+	 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	 <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+
+	<a id="color" href="#"> Cambiar color </a>
+
+	<a id="fuente" href="#"> Cambiar fuente </a>
+
+
+	
+
+	<h1>Prueba de botones</h1>
+
+	<p>
+	 If you click on this paragraph
+	 you'll see it just fade away.
+	</p>
+
+	<script>
+
+		$("#color").click(function(){
+
+			$("h1").css({'color':'red'});
+
+		});
+
+		$("#fuente").click(function(){
+
+			$("h1").css({'font-family':'arial'});
+
+		});
+
+		$( "p" ).click(function() {
+		
+			$( "p" ).fadeOut( "slow" );
+			$( "p" ).fadeIn( "slow" );
+
+		});
+	</script>
+</body>
+</html>
